@@ -17,13 +17,19 @@
     />
 
     <title>Temperature Converter</title>
+    <style>
+      #loading,
+      #result {
+        display: none;
+      }
+    </style>
   </head>
   <body class="bg-dark">
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto">
           <div class="card card-body text-center mt-5">
-            <h1 class="heading display-5 pb-3"></h1>
+            <h1 class="heading display-5 pb-3">Temperature Converter</h1>
             <form id="temp-form">
               <div class="form-group">
                 <div class="input-group-prepend">
@@ -56,11 +62,11 @@
               </div>
             </form>
             <!-- LOADER -->
-            <!-- <div id="loading">
-              <img src="img/loading.gif" alt="">
-            </div> -->
+            <div id="loading">
+              <img src="img/loading.gif" alt="" />
+            </div>
             <!-- RESULTS -->
-            <div id="results" class="pt-4">
+            <div id="result" class="pt-4">
               <h5>Results</h5>
               <div class="form-group">
                 <div class="input-group">
